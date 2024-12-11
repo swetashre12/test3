@@ -1,5 +1,4 @@
 import Image from "next/image";
-import styles from "./page.module.css";
 import Header from "./components/Header/Header";
 import AnimateText from "./components/AnimateText/AnimateText";
 import Services from "./components/services/Services";
@@ -90,7 +89,7 @@ export default function Home() {
               </div>
             </div>
             <a className="talk-t my-5 text-center" href="/contact">
-              <span className="talk-btn">let's talk</span>
+              <span className="talk-btn">lets talk</span>
             </a>
 
             <Image 

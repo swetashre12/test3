@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import Nav from "react-bootstrap/Nav";
 import Link from 'next/link'
 import { GiHamburgerMenu } from "react-icons/gi";
