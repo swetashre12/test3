@@ -1,0 +1,31 @@
+
+
+.blog-box a {
+    text-decoration: none;
+    color: black;
+  }
+  .tag-text{
+    background-color: #eaebeb;
+    
+   
+  }
+  .tag-title{
+    color: #276d9b;
+  
+  }
+  .blog-date{
+    color: #92979b;
+  }
+  .blog-title{
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  .img-detail-blog{
+    width: 80%;
+  }
+  .img-experts, .img-speakers {
+    height: 60px;
+    object-fit: cover;
+    width: 60px;
+    border-radius: 80%;
+  }

@@ -16,7 +16,7 @@
     color: #1b1b1b;
   
     text-align: center;
-    font-family: "Inter";
+    font-family: "Inter", sans-serif;
     font-size: 60px;
     font-style: normal;
     font-weight: 500;
@@ -126,7 +126,7 @@
   .book-text {
     color: #fff;
   
-    font-family: "Inter";
+    font-family: "Inter", sans-serif;
     font-size: 21.6px;
     font-style: normal;
     font-weight: 500;
@@ -135,7 +135,7 @@
   .start-call {
     color: #fff;
     background: #324866;
-    font-family: "Inter";
+    font-family: "Inter", sans-serif;
     font-size: 50.2px;
     font-style: normal;
     font-weight: 500;
@@ -162,7 +162,7 @@
   .para-call {
     color: rgba(255, 255, 255, 0.85);
   
-    font-family: "Inter";
+    font-family: "Inter", sans-serif;
     font-size: 17.1px;
     font-style: normal;
     font-weight: 400;
@@ -223,7 +223,7 @@
     margin: 0 auto 2.5rem;
   }
   .Tittle-partner {
-    font-family: "Inter";
+    font-family: "Inter", sans-serif;
     color: #212529;
     font-size: 25px;
     font-style: normal;
@@ -231,7 +231,7 @@
     line-height: 48px;
   }
   .title-skill {
-    font-family: "Inter";
+    font-family: "Inter", sans-serif;
     color: #35334f;
     font-size: 40px;
     font-style: normal;
@@ -250,6 +250,9 @@
     line-height: 1.5;
   
     font-family: "Inter", sans-serif;
+  }
+  .schedule-contents{
+    padding-left: 100px;
   }
   
   .display-1 {
@@ -327,6 +330,10 @@
   .button-work {
     min-width: 223px;
   }
+  .book-img{
+    width: 100%;
+    height: 100%;
+  }
   @media (max-width: 768px) {
     .build-content {
       flex-direction: column;
@@ -349,6 +356,10 @@
       line-height: 30px;
       font-size: 30px;
     }
+    .schedule-contents{
+      padding-left: 20px;
+    }
+    
   }
   
   @media (max-width: 576px) {

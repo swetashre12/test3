@@ -1,0 +1,35 @@
+footer {
+    font-family: "Inter", sans-serif;
+    color: #dbdbdb;
+  }
+  
+  .bg-blue-light {
+    background: #1e1e1e;
+  }
+  .text-pri {
+    color: #fff !important;
+  }
+  .text-black-61 {
+    color: rgba(0, 0, 0, 0.61);
+  }
+  .bg-blue-63 {
+    background-color: #47474a;
+  }
+  .rounded-circle {
+    border-radius: 50% !important;
+  }
+  .rounded-circle a {
+    color: #fff;
+  }
+  footer ul {
+    padding-inline-start: 0 !important;
+  }
+  .text-bot {
+    font-size: 12px;
+  }
+  .line-bot {
+    height: 1px;
+    background-color: #b1e7eb;
+    width: 100%;
+  }
+  

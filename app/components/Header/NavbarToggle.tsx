@@ -29,14 +29,14 @@ export default function NavBarToggle() {
                 className=" ms-0 ms-lg-5 mt-4  my-lg-auto nav-custom-edits"
                 title="Home"
               >
-                <>Home</>
+                Home
               </Link>
               <Link
                href="/about"
                 className=" ms-0 ms-lg-5 mt-4  my-lg-auto nav-custom-edits"
                 title="About Us"
               >
-                <>About</>
+                About
               </Link>
 
               <Link
@@ -44,7 +44,7 @@ export default function NavBarToggle() {
                 className="ms-0 ms-lg-5 mt-4 my-lg-auto  nav-custom-edits"
                 title="services"
               >
-                <>Services </>
+                Services 
               </Link>
               
               <Link
@@ -52,14 +52,14 @@ export default function NavBarToggle() {
                 className=" ms-0 ms-lg-5 mt-4  my-lg-auto  nav-custom-edits"
                 title="Hiring"
               >
-                <>Hiring</>
+                Hiring
               </Link>
               <Link
                href="/contact"
                 className="ms-0 ms-lg-5 mt-4  my-lg-auto  nav-button-edits "
                 title="Book a call"
               >
-                <>Book a call</>
+                Book a call
               </Link>
             </Nav>
           </Navbar.Collapse>

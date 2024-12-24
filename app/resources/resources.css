@@ -1,0 +1,118 @@
+.compare-res{
+    font-size: 30px;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+}
+
+.section-about {
+    font-family: "Inter", sans-serif;
+    background-color: #fffbf4;
+  }
+
+.about-title {
+    font-family: "Inter", sans-serif;
+    font-size: 42.5px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 60.2px; 
+    letter-spacing: -0.28px;
+  }
+.resource{
+    border-radius: 200px;
+  border: 1px solid #1b1b1b;
+
+  background: #1b1b1b;
+  color: #fff;
+  /* min-width: 64px; */
+
+  padding: 16px 24px;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+section-about {
+    font-family: "Inter", sans-serif;
+    background-color: #fffbf4;
+  }
+  
+  .mission-section {
+    background-color: #dbeeff;
+  }
+  
+  .request-btn {
+    border-radius: 200px;
+    border: 1px solid #1b1b1b;
+  
+    background: #1b1b1b;
+    color: #fff;
+    min-width: 64px;
+  
+    padding: 16px 24px;
+    font-size: 1rem;
+  }
+  .svg-about {
+    position: relative;
+    overflow: hidden;
+    height: 150px;
+    filter: drop-shadow(0px 8px 4px rgba(0, 0, 0, 0.2));
+  }
+
+  .svg-about::before {
+    margin-bottom: 10px;
+    border-bottom-left-radius: 70%;
+    border-bottom-right-radius: 50%;
+    position: absolute;
+    background: #dbeeff;
+    right: -300px;
+    left: -100px;
+    top: -200px;
+    content: "";
+    bottom: 0;
+  }
+
+  @media only screen and (max-width: 1200px) {
+    .about-title {
+      font-size: 30px;
+      line-height: 45.2px;
+    }
+    .explore-title {
+      font-size: 30px;
+    }
+  }
+  @media only screen and (min-device-width: 769px) and (max-device-width: 992px) {
+    .about-container .nav-justified .nav-item {
+      margin-left: 3px;
+      margin-right: 3px;
+    }
+  }
+  @media (max-width: 768px) {
+    .about-container .nav-justified .nav-item {
+      padding-right: 10px !important ;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    .about-container .nav-tabs .nav-link {
+      padding: 10px 10px 12px 20px !important;
+    }
+    .skill-tab {
+      font-size: 13px;
+    }
+  }
+  @media (max-width: 576px) {
+    .about-container .nav-justified .nav-item {
+      padding-right: 10px !important ;
+      margin-left: 3px;
+      margin-right: 3px;
+    }
+    .about-container .nav-tabs .nav-link {
+      padding: 10px 10px 12px 10px !important;
+    }
+    .about-container .nav-tabs {
+      justify-content: space-between;
+    }
+    .svg-about::before {
+      margin-bottom: 20px;
+      border-bottom-left-radius: 85%;
+      border-bottom-right-radius: 80%;
+    }
+  }

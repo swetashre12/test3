@@ -1,0 +1,380 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+  }
+  .service-section {
+    background-color: #f4e0fe;
+  }
+  .svg-service {
+    margin-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+    height: 150px;
+    filter: drop-shadow(0px 8px 4px rgba(0, 0, 0, 0.2));
+  }
+  .svg-service::before {
+    border-bottom-left-radius: 70%;
+    border-bottom-right-radius: 50%;
+    position: absolute;
+    background: #f4e0fe;
+    right: -300px;
+    left: -100px;
+    top: -200px;
+    content: "";
+    bottom: 0;
+  }
+  .img-girl {
+    /* border-radius: 50%; */
+    width: 500px;
+  }
+  .service-whole {
+    background-color: #fffbf4;
+  }
+  .contains.active-service .ser-til {
+    border: 2px solid #1b1b1b;
+    background-color: var(--service-color);
+    /* padding: 10px; */
+    border-radius: 30px;
+  }
+  .hero-banner {
+    background-color: #1d5392;
+  }
+  .faq-2 a {
+    text-decoration: none;
+  }
+  /* .service-checkbox {
+    position: relative;
+  } */
+  /* Custom checkbox */
+  /* .service-checkbox input[type="checkbox"] {
+    position: absolute;
+    
+    cursor: pointer;
+    border-radius: 90% !important;
+  } */
+  
+  /* Style the custom checkbox */
+  /* .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 100% !important; /* Make it round */
+  
+  .line-dash {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0; /* Adjust this value to control the distance between the line and the title */
+    height: 100%;
+    width: 40px; /* Width of the vertical line */
+    background-color: #ccc;
+    margin-bottom: 10px;
+  }
+  
+  /* Hide the default checkbox */
+  /* .service-checkbox input[type="checkbox"] + .checkmark::before {
+    content: "";
+    position: absolute;
+    display: none;
+  } */
+  
+  /* Show the custom checkbox when checked */
+  /* .service-checkbox .checkmark::after {
+    display: block;
+  } */
+  
+  /* Style the checkmark inside the custom checkbox */
+  /* .service-checkbox .checkmark::after {
+    content: "";
+    position: absolute;
+    display: block;
+    
+    background: #9a2e11;
+    height: 13px;
+    width: 11px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  } */
+  .ser-til {
+    padding: 10px;
+    white-space: nowrap;
+  }
+  .contains {
+    display: block;
+    position: relative;
+  
+    cursor: pointer;
+    font-size: 13px;
+    font-family: "Inter", sans-serif;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .tab-cont {
+    box-shadow: 0px 4px 40px 0px #00000040;
+    border-radius: 20px;
+    height: 500px;
+    width: 400px;
+  }
+  .get-start {
+    text-decoration: none;
+  }
+  
+  .request-start {
+    border-radius: 200px;
+    border: 1px solid #1b1b1b;
+  
+    background: none !important;
+    color: black;
+    min-width: 64px;
+  
+    padding: 16px 24px;
+    font-size: 1rem;
+  }
+  .img-serv {
+    /* object-fit: contain; */
+    height: 500px;
+    width: 500px;
+    box-shadow: 0px 4px 20px 0px #00000040;
+  
+    border-radius: 20px;
+  }
+  .serv-text {
+    font-size: 25px;
+    font-weight: 500;
+  }
+  
+  .contains input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border-radius: 30px;
+    /* background-color: #efffc3; */
+    border: 1px solid black;
+  }
+  
+  .contains input:checked ~ .checkmark {
+    background-color: var(--service-color);
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .contains input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  .svg-bottom {
+    position: relative;
+    overflow: hidden;
+    height: 210px;
+  }
+  
+  .svg-bottom::before {
+    border-top-left-radius: 40%;
+    border-top-right-radius: 100%;
+    position: absolute;
+    background: #324866;
+    right: -200px;
+    left: -100px;
+    top: 0;
+    content: "";
+    bottom: -200px;
+  }
+  
+  .contains .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 6px;
+    height: 11px;
+    border: solid #1b1b1b;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  
+  .service-text {
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+  }
+  .service-desc {
+    color: #fff;
+    font-size: 1.125rem;
+    margin-top: 1rem;
+   
+    font-family: "Inter", sans-serif;
+  }
+  .service-more {
+    font-family: "Inter", sans-serif;
+  }
+  .btn-secondary {
+    color: #fff;
+    background-color: #1d5392;
+    border-color: #1d5392;
+  }
+  
+  .section-service {
+    padding-top: 5rem;
+  }
+  .service-main {
+    cursor: pointer;
+  }
+  .line-service {
+    margin-left: 10px;
+  
+    height: 25px;
+    width: 3px;
+    background-color: #000000;
+  }
+  .service-list {
+    position: sticky;
+  
+    top: 0;
+    height: 100vh;
+    /* overflow-y: auto; */
+    padding-top: 6rem;
+  }
+  
+  .service-main:hover {
+    color: #1d5392;
+  }
+  .hero-container {
+    min-height: 294px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .text-inside a {
+    color: #1d5392;
+    border-bottom: 1px dashed #1d5392 !important;
+    text-decoration: none;
+  }
+  
+  .hero-mobile-banner {
+    display: none;
+  }
+  .faq-box {
+    font-family: "Inter", sans-serif;
+  }
+  .section-service .nav-justified .nav-item {
+    flex-grow: 0 !important;
+    flex-basis: auto !important;
+    
+  }
+  .section-service .nav-tabs {
+    border-bottom: 0.9px solid #1b1b1b29 !important;
+    justify-content: center;
+  }
+  .section-service .nav-tabs .nav-link {
+    padding: 40px 40px 10px 40px !important;
+    position: relative !important;
+    border: none !important;
+  }
+  .section-service .nav-link.active {
+    box-shadow: none !important;
+    background: none !important;
+    border-bottom: 3px solid #b3aba4 !important;
+  
+  
+  }
+  .text-ser {
+    font-size: 45px;
+    font-weight: 300;
+    line-height: 60.2px;
+    letter-spacing: -0.28px;
+  }
+  .talk-t {
+    text-decoration: none;
+  }
+  .request-btn {
+    border-radius: 200px;
+    border: 1px solid #1b1b1b;
+  
+    background: #1b1b1b;
+    color: #fff;
+    min-width: 64px;
+  
+    padding: 16px 24px;
+    font-size: 1rem;
+  }
+  .skill-tab {
+    color: #95a5a6;
+    font-weight: 500 !important;
+  }
+  
+  .about-container .nav-link::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background-color: #112a62;
+    opacity: 0.5;
+  }
+  .nav-link.active .skill-tab {
+    color: #040709 !important;
+  }
+  
+  @media (max-width: 767px) {
+    .hero-mobile-banner {
+      display: block;
+    }
+    .hero-banner {
+      display: none;
+    }
+    .service-list {
+      position: relative;
+      height: auto;
+      padding-top: 2rem;
+      text-align: center;
+    }
+    .hero-container {
+      min-height: 244px;
+    }
+  }
+  @media (max-width: 576px) {
+    .img-serv,
+    .tab-cont {
+      height: 100%;
+    }
+    .text-ser {
+      font-size: 35px;
+    }
+    .svg-service::before {
+      margin-bottom: 20px;
+      border-bottom-left-radius: 85%;
+      border-bottom-right-radius: 80%;
+    }
+  
+  }
+  @media (max-width: 1200px) {
+    .tab-cont {
+      width: 500px;
+    }
+  }

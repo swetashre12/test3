@@ -1,0 +1,46 @@
+.hire-detail:before {
+    content: "";
+    display: block;
+    height: 60px;
+  }
+  .hire-detail {
+    background-color: #fffbf4;
+   
+    font-family: "Inter", sans-serif;
+  }
+  .closed{
+    color: red;
+    
+  }
+  .bor-hire {
+    border-top: 1px solid #f2f4f9;
+  }
+  .bor-left {
+    border-left: 1px solid #f2f4f9;
+  }
+  .jb-list a {
+    text-decoration: none;
+    color: #6875e2;
+  }
+  .jb-detail {
+    color: #5c6575;
+  }
+  .job-dest {
+    font-weight: 700;
+  }
+  .job-child {
+    line-height: 27px;
+  }
+  .jb-req {
+    font-size: 18px;
+  }
+  .job-require {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .jb-ind {
+    color: #5c6575;
+  }
+  .jb-small {
+    font-weight: 600;
+  }

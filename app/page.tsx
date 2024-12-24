@@ -2,7 +2,8 @@ import Image from "next/image";
 import Header from "./components/Header/Header";
 import AnimateText from "./components/AnimateText/AnimateText";
 import Services from "./components/services/Services";
-
+import Testimonials from "./components/Testimonials/Testimonials";
+import Footer from "./components/Footer/Footer";
 
 import './Homepage.css';
 import { Metadata } from "next";
@@ -42,9 +43,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.neelgai.com",
   },
-  icons: {
-    icon: "/favicon.png",
-  },
+ 
 };
 
 
@@ -89,7 +88,7 @@ export default function Home() {
               </div>
             </div>
             <a className="talk-t my-5 text-center" href="/contact">
-              <span className="talk-btn">lets talk</span>
+              <span className="talk-btn">let&apos;s talk</span>
             </a>
 
             <Image 
@@ -144,6 +143,87 @@ export default function Home() {
       </section>
       <div className="svg-text"></div>
       <Services/>
+      <Testimonials/>
+
+      <section className=" start-connect pt-5 mt-5">
+        <div className="svg-bottom"></div>
+        <div className="text-center start-call pt-3">
+          <span>Get started with Neelgai</span>
+          <br></br>
+          <span>in three easy steps</span>
+        </div>
+        <div className="book-content pt-5">
+          <div className=" container-fluid pt-4 ">
+            <div className="row">
+              <div className="col-lg-7 schedule-contents pt-5 my-3">
+                <div className="d-flex gp-bet ">
+                  <div className="num-circle ">1</div>
+                  <div className="book-text ">Schedule a call</div>
+                </div>
+                <div className="call-desc my-3">
+                  <div className="call-more">
+                    <p className="text-start para-call">
+                      Book a meeting with our experts to discuss your tech needs
+                      and goals.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="d-flex gp-bet">
+                  <div className="num-circle ">2</div>
+                  <div className="book-text ">Define project scope</div>
+                </div>
+                <div className="call-desc my-3">
+                  <div className="call-more">
+                    <p className="text-start para-call">
+                      We'll outline the project roadmap, create a detailed
+                      design, provide an accurate cost and timeline estimation.
+                    </p>
+                  </div>
+                </div>
+                <div className="d-flex gp-bet">
+                  <div className="num-circle ">3</div>
+                  <div className="book-text ">Project execution</div>
+                </div>
+                <div className="call-desc mt-3">
+                  <div className="call-more">
+                    <p className="text-start para-call pb-2">
+                      Once you are satisfied with the project scope, we onboard
+                      a dedicated team of engineers and project managers to
+                      promptly execute the project.
+                    </p>
+
+                    <a className="talk-t " href="/contact">
+                      <span className="talk-btn2  float-start">
+                        Get started
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-lg-5 px-0">
+              {/* <Image 
+                    src="/booking.png"
+                    alt="Booking logo"
+                    width={900} 
+                    height={100} 
+                    className="img-fluid"
+                  /> */}
+                  <img
+                src="/booking.png"
+                  className=" img-fluid book-img "
+                  alt="Booking logo"
+                />
+                
+                
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <Footer/>
 
 
       

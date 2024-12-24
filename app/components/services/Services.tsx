@@ -17,6 +17,8 @@ import { IoHardwareChip } from "react-icons/io5";
 import { MdAppSettingsAlt } from "react-icons/md";
 import { IoCloudSharp } from "react-icons/io5";
 import { MdOutlineSecurity } from "react-icons/md";
+import Image from "next/image";
+import './Services.css'
 
 const Services = () => {
 
@@ -52,14 +54,14 @@ const Services = () => {
         },
         {
           id: 5,
-          image: './machine.png',
+          image: '/machine.png',
           tittle: "Machine Learning",
           description:
             "Neelgai specializes in machine learning solutions, leveraging tools like scikit-learn, Keras, TensorFlow, and PyTorch to deliver predictive analytics and intelligent automation for your business.",
         },
         {
           id: 6,
-        //   image: Images.lock,
+        image:'/lock.png',
           tittle: "Cyber Security",
           description:
             "Our certified professionals employ the latest tools to identify vulnerabilities, implement security measures, and mitigate risks. From pen testing to security audits, the company ensures the highest level of protection against cyber threats.",
@@ -69,13 +71,13 @@ const Services = () => {
       const technologies = [
         {
           id: 1,
-        //   image: Images.program,
+          image: "/program.png",
           tittle: "Programming Languages",
           tech_used: [
-            // { id: 1, image: Images.go },
-            // { id: 2, image: Images.python },
-            // { id: 3, image: Images.javascript },
-            // { id: 4, image: Images.sql },
+            { id: 1, image: "/go.png" },
+            { id: 2, image: "/python.jpg" },
+            { id: 3, image: "/javascript.png" },
+            { id: 4, image: "sql.png" },
           ],
         },
         {
@@ -83,10 +85,10 @@ const Services = () => {
           image: './machine.png',
           tittle: "AI/ML tools",
           tech_used: [
-            // { id: 1, image: Images.redis },
-            // { id: 2, image: Images.kaggle },
-            // { id: 3, image: Images.numpy },
-            // { id: 4, image: Images.pandas },
+            { id: 1, image: './redis.png' },
+            { id: 2, image: './kaggle.png' },
+            { id: 3, image: './numpy.png'},
+            { id: 4, image: './pandas.png' },
           ],
         },
         {
@@ -94,10 +96,10 @@ const Services = () => {
           icon: <IoCloudSharp />,
           tittle: "Infrastructure",
           tech_used: [
-            // { id: 1, image: Images.terraform },
-            // { id: 2, image: Images.kubernetes },
-            // { id: 3, image: Images.docker },
-            // { id: 4, image: Images.amazon },
+            { id: 1, image: './terraform.jfif' },
+            { id: 2, image:'./kubernetes.png' },
+            { id: 3, image: './docker.png' },
+            { id: 4, image: './amazon.png'},
           ],
         },
         {
@@ -105,10 +107,10 @@ const Services = () => {
           icon: <BsFileCode />,
           tittle: "Frameworks",
           tech_used: [
-            // { id: 1, image: Images.django },
-            // { id: 2, image: Images.nextjs },
-            // { id: 3, image: Images.react },
-            // { id: 4, image: Images.postgresql },
+            { id: 1, image: './django.png' },
+            { id: 2, image: './nextjs.png' },
+            { id: 3, image: './nextjs.png' },
+            { id: 4, image: './postgresql.png' },
           ],
         },
         {
@@ -116,10 +118,10 @@ const Services = () => {
           icon: <MdOutlineSecurity />,
           tittle: "Security",
           tech_used: [
-            // { id: 1, image: Images.transantiago },
-            // { id: 2, image: Images.rsa },
-            // { id: 3, image: Images.cisco },
-            // { id: 4, image: Images.okta },
+            { id: 1, image: './transantiago.JPG' },
+            { id: 2, image: './rsa.svg' },
+            { id: 3, image: './cisco.png' },
+            { id: 4, image:'./okta.png' },
           ],
         },
         {
@@ -127,9 +129,9 @@ const Services = () => {
           icon: <PiInfinity />,
           tittle: "And many more...",
           tech_used: [
-            // { id: 1, image: Images.graphql },
-            // { id: 2, image: Images.jenkins },
-            // { id: 3, image: Images.unity },
+            { id: 1, image: './graphql.png' },
+            { id: 2, image: './jenkins.png' },
+            { id: 3, image: './unity.png' },
           ],
         },
       ];
@@ -180,50 +182,50 @@ const Services = () => {
       const industries = [
         {
           id: 1,
-        //   image: Images.health,
+          image: './health.jfif',
           tittle: "Healthcare",
           description:
             "Healthcare software, secure data management, and patient care systems.",
         },
         {
           id: 2,
-        //   image: Images.finance,
+          image: './finance.jfif',
           tittle: "Finance",
           description:
             " Financial software with secure payments, analytics, and user-friendly interface.",
         },
         {
           id: 3,
-        //   image: Images.education,
+          image: './education.jfif',
           tittle: "Education",
           description:
             " LMS, interactive platforms, and virtual tools for remote learning.",
         },
         {
           id: 4,
-        //   image: Images.ecommerce,
+          image: './ecommerce.jfif',
           tittle: "E-commerce",
           description:
             "E-commerce sites, payment gateways, and inventory management.",
         },
         {
           id: 5,
-        //   image: Images.social,
+          image: './social.jfif',
           tittle: "Social Media",
           description:
             " Social media tools, content scheduling, chatbots for support, and targeted ads.",
         },
         {
           id: 6,
-    
+         
           tittle: "More...",
           description: " Tell us what you got and we will build it!",
         },
       ];
   return (
     <section className=" pt-5 container service-container mt-5">
-    <h1 className="title-skill ">Services</h1>
-    <p className=" fs-lead py-4 text-desc mt-4">
+    <h1 className="title-skill text-center ">Services</h1>
+    <p className=" fs-lead py-4 text-desc mt-4 text-center">
       We create everything from simple websites to advance AI models using
       the latest technologies and best practices.
     </p>
@@ -248,15 +250,21 @@ const Services = () => {
           {build.map((elem, index) => (
             <div key={index} className=" col-lg-4  px-0 mt-3">
               <div className=" box-desc m-2  ">
-                <div className="text-start icon-skill">
+                <div className="text-start icon-skills">
                   {elem.icon ? (
                     elem.icon
                   ) : (
-                    <img
-                      src={elem.image}
-                      alt=" icon"
-                      className="img-build"
-                    />
+                   
+
+                    <Image 
+                    src={elem.image}
+                    alt="VC logo"
+                    width={40} 
+                    height={40} 
+                    className="img-fluid"
+                  />
+                 
+                    
                   )}
                 </div>
                 <div className="text-start skill-topic py-2">
@@ -286,7 +294,7 @@ const Services = () => {
             <div key={index} className="col-lg-4 px-0 mt-3">
               <div className="box-desc m-2">
                 <div className="text-start skill-topic py-2">
-                  <span className="icon-skill pe-3">
+                  <span className="icon-skill pe-3 ">
                     {elem.icon ? (
                       elem.icon
                     ) : (
@@ -299,15 +307,15 @@ const Services = () => {
                   </span>
                   {elem.tittle}
                 </div>
-                <div className="tech-used row">
+                <div className="tech-used row text-center">
                   {elem.tech_used.map((tech, techIndex) => (
                     <div key={techIndex} className="col-6 pb-1">
-                      {/* <img
+                      <img
                         key={techIndex}
                         src={tech.image}
                         alt={`Tech ${techIndex}`}
                         className="tech-image img-fluid"
-                      /> */}
+                      />
                     </div>
                   ))}
                 </div>
@@ -358,7 +366,7 @@ const Services = () => {
           {industries.map((elem, index) => (
             <div key={index} className=" col-lg-4  px-0 mt-3">
               <div className=" ind-desc m-2  ">
-                {/* {elem.image ? (
+                {elem.image ? (
                   <img
                     src={elem.image}
                     className="img-fluid ind-img"
@@ -366,7 +374,7 @@ const Services = () => {
                   />
                 ) : (
                   <div className="pt-5"></div>
-                )} */}
+                )}
                 <div className="text-start skill-topic pt-3 pb-2 ps-3">
                   {elem.tittle}
                 </div>

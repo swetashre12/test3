@@ -1,0 +1,6 @@
+.img-experts, .img-speakers {
+    height: 60px;
+    object-fit: cover;
+    width: 60px;
+    border-radius: 80%;
+  }

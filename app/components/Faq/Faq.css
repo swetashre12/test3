@@ -1,0 +1,70 @@
+.faq-box {
+    background: #324866;
+    font-family: "Inter", sans-serif;
+    color: #fff;
+    margin-top: -8px;
+  }
+  .text-faq {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+  }
+  .text-acco a {
+    text-decoration: none;
+    color: #fff;
+  }
+  .faq-box .accordion-button::after {
+    background-image: none;
+    font-size: 25px;
+    content: "+";
+    width: 0.9rem;
+    height: 2rem;
+    font-weight: 500;
+    color: #fff;
+  }
+  
+  .faq-box .accordion-button:not(.collapsed)::after {
+    background-image: none;
+  
+    font-size: 30px;
+    content: "-";
+    color: black;
+  }
+  .faq-box .accordion-item {
+    border-left: none;
+    border-top: none;
+    border-right: none;
+  }
+  .faq-box .accordion {
+    --bs-accordion-bg: none;
+    max-width: 100% !important;
+  }
+  .faq-box .accordion-button:focus {
+    box-shadow: none;
+    z-index: 0;
+    outline: none;
+  }
+  .faq-box .accordion-button:not(.collapsed) {
+    background: #386da1;
+  
+    color: black;
+  
+    box-shadow: none;
+  }
+  .faq-box .accordion-body {
+    color: #fff;
+  }
+  .faq-box .item-num {
+    color: #7c7c87;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .text-question {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+  }
+  .faq-box .accordion-item:last-of-type {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }

@@ -1,0 +1,145 @@
+.hire::before {
+    content: "";
+    display: block;
+    height: 60px;
+  }
+  .bg-hire {
+    background-color: #fff;
+    
+  }
+  .hire {
+    background-color: #fffbf4;
+   
+  }
+  .hire-more .form-check-input {
+    width: 20px;
+    height: 20px;
+    border: 3px solid #dee4f0;
+  }
+  .closed{
+    color: red;
+    
+  }
+  h2,p{
+    color: #000;
+
+
+  }
+  .svg-hire {
+    position: relative;
+    overflow: hidden;
+    height: 150px;
+    filter: drop-shadow(0px 8px 4px rgba(0, 0, 0, 0.2));
+  }
+  
+  .svg-hire::before {
+    margin-bottom: 10px;
+    border-bottom-left-radius: 70%;
+    border-bottom-right-radius: 50%;
+    position: absolute;
+    background: #fff;
+    right: -300px;
+    left: -100px;
+    top: -200px;
+    content: "";
+    bottom: 0;
+  }
+  .filters {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 4px 20px 0px #0000000d;
+  }
+  .job-type {
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+  }
+  .label-filter {
+    font-weight: 500;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+  }
+  .input-container {
+    position: relative;
+  }
+  .more-hire {
+    display: grid;
+    align-items: end;
+  }
+  
+  .input-container input {
+    width: 100%;
+    padding: 10px 40px 10px 10px;
+    box-sizing: border-box;
+  }
+  
+  .input-container .icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+  .btn-src {
+    background-color: #6875e2;
+    color: #fff;
+    width: 120px;
+    border-color: #6875e2;
+  }
+  .btn-more {
+    background-color: #6875e2;
+    color: #fff;
+  
+    border-color: #6875e2;
+  }
+  .btn-src:hover,
+  .btn-more:hover {
+    background-color: #2b39bb;
+  }
+  .current-open {
+    font-family: "Inter", sans-serif;
+    font-size: 30px;
+  }
+  .job-type {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  .search-filter {
+    box-shadow: 0px 4px 20px 0px #0000000d;
+  
+    font-family: "Inter", sans-serif;
+    background-color: #fff;
+    border-radius: 20px;
+  }
+  .open-job {
+    background-color: #fff;
+    box-shadow: 0px 4px 20px 0px #00000040;
+    border-radius: 20px;
+    font-family: "Inter", sans-serif;
+  }
+  .job-title {
+    color: #6875e2;
+    font-weight: 700;
+  }
+  .no-jobs-message {
+    font-size: 35px;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+  }
+  .hire-box a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  @media (max-width: 768px) {
+    .svg-hire {
+      height: 80px;
+    }
+  }
+  @media (max-width: 576px) {
+    .svg-hire::before {
+      margin-bottom: 20px;
+      border-bottom-left-radius: 85%;
+      border-bottom-right-radius: 80%;
+    }
+  }
