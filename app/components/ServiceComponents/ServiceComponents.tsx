@@ -249,7 +249,7 @@ const ServiceComponents = () => {
 
   
 
-  const scrollToSection = (id:any) => {
+  const scrollToSection = (id:string) => {
     setActiveService(id);
     const element = document.getElementById(id);
     if (element) {

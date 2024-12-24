@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { type SanityDocument } from "next-sanity";
 import Header from '../components/Header/Header';
 import Footer from "@/app/components/Footer/Footer";
 import { client } from "../constant/client";

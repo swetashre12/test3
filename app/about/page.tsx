@@ -171,7 +171,7 @@ const AboutPage = () => {
               <h1 className="explore-title py-5 my-5">
                 We built Neelgai to solve these challenges
               </h1>
-              <p className="pro-service pt-5">NEELGAI'S</p>
+              <p className="pro-service pt-5">NEELGAI &apos;S</p>
               <div className="col-md-6 mx-auto">
                 <h1 className="pro-description px-md-5">Guiding principles</h1>
                 <p className="pt-2">

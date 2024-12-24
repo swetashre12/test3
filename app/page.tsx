@@ -176,7 +176,7 @@ export default function Home() {
                 <div className="call-desc my-3">
                   <div className="call-more">
                     <p className="text-start para-call">
-                      We'll outline the project roadmap, create a detailed
+                      We&apos;ll outline the project roadmap, create a detailed
                       design, provide an accurate cost and timeline estimation.
                     </p>
                   </div>

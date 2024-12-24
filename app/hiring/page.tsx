@@ -67,8 +67,8 @@ export default function page() {
               <p className="lead py-4 text-start">
                 We know that finding a meaningful and rewarding job can be a
                 long journey. Our goal is to make that process as easy as
-                possible for you, and to create a work environment that's
-                satisfying - one where you'll look forward to coming to every
+                possible for you, and to create a work environment that&apos;s
+                satisfying - one where you&apos;ll look forward to coming to every
                 day. Start your journey with us by browsing available jobs.
               </p>
               

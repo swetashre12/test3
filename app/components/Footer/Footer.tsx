@@ -3,6 +3,7 @@ import { CiLinkedin } from "react-icons/ci";
 import { CiLocationOn } from "react-icons/ci";
 import { FaFacebookF } from "react-icons/fa";
 import "./Footer.css";
+import Link from "next/link";
 export default function Footer() {
   return (
     <footer className={`shared footer   bg-blue-light pb-5`}>
@@ -49,25 +50,25 @@ export default function Footer() {
             <h5 className="fs-6 fw-semibold text-pri">Company</h5>
             <ul className="list-unstyled">
               <li className=" ps-lg-1">
-                <a className="small text-pri text-decoration-none" href="/">
+                <Link className="small text-pri text-decoration-none" href="/">
                   Home
-                </a>
+                </Link>
               </li>
               <li className="ps-lg-1">
-                <a
+                <Link
                   className="small text-pri text-decoration-none"
                   href="/about"
                 >
                   About Us
-                </a>
+                </Link>
               </li>
               <li className="ps-lg-1">
-                <a
+                <Link
                   className="small text-pri text-decoration-none"
                   href="/services"
                 >
                   Services
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

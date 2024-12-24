@@ -1,6 +1,5 @@
 import React from 'react';
 import Header from '../components/Header/Header';
-import Image from "next/image";
 import './resources.css'
 
 import Footer from '../components/Footer/Footer';

@@ -97,7 +97,7 @@ export async  function generateMetadata({ params }: { params: { slug: string } }
             ) : (
               <div className="more-hire text">
                 <Link href="https://neelgai.zohorecruit.com/forms/283fb6777ff26df872dc7bc7cf285a9e982f42f521079726f426f3e20822f8b7">
-                  <button className="btn btn-success btn-more">I'm interested</button>
+                  <button className="btn btn-success btn-more">I&apos;m interested</button>
                 </Link>
               </div>
             )}
@@ -179,7 +179,7 @@ export async  function generateMetadata({ params }: { params: { slug: string } }
                     )}
                     <div className="more-hire text-start py-4">
                       <Link href="https://neelgai.zohorecruit.com/forms/283fb6777ff26df872dc7bc7cf285a9e982f42f521079726f426f3e20822f8b7">
-                        <button className="btn btn-success btn-more">I'm interested</button>
+                        <button className="btn btn-success btn-more">I&apos;m interested</button>
                       </Link>
                     </div>
                   </div>

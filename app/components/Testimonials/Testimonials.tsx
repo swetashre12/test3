@@ -86,15 +86,15 @@ const Testimonials = () => {
                     className="img-fluid round-home me-4 mb-3"
                   />
                 <p className="card-text text-black-61 text-start">
-                  "Deepak and Arbind worked wonders revamping our old website,
+                &quot;Deepak and Arbind worked wonders revamping our old website,
                   turning it into a modern infrastructure marvel. Their
                   expertise and attention to detail shine through, creating a
                   seamless, visually appealing experience. They not only met but
                   exceeded modern standards, showcasing a deep understanding of
-                  the latest technologies. Neelgai's transformative touch has
+                  the latest technologies. Neelgai&apos;s transformative touch has
                   elevated our online presence, making them strategic partners
                   dedicated to digital success. Kudos to Neelgai for breathing
-                  new life into our web platform!."
+                  new life into our web platform!.&quot;
                   <br />
                   <span className="fw-bold  text-wrap">
                     - Ojaswi Pandey (Data Scientist at Defense Health Agency)
@@ -102,11 +102,7 @@ const Testimonials = () => {
                 </p>
               </div>
               <div className="pt-4 text-end">
-                {/* <img
-                  src={Images.testimonial_right}
-                  className=" img-fluid  "
-                  width={63}  alt="Another icon"
-                /> */}
+                
 
 <Image 
                     src="/testimonials-right-quote.png"
@@ -136,7 +132,7 @@ const Testimonials = () => {
                   <img src={elem.image} className="img-fluid round-home  mb-3 text-start"  alt={`${elem.client_name} `}/>
                   </div>
                     <p className="card-text text-black-61 text-start">
-                      "{elem.description}"
+                    &quot;{elem.description}&quot;
                       <br />
                       <span className="fw-bold  text-wrap">
                         - {elem.client_name}

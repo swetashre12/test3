@@ -151,7 +151,7 @@ const page = () => {
               We come from diverse backgrounds, including FAANG companies, the Big Four, Ivy League, and regions spanning the US, Europe, Asia, and Australia. They contribute as managers, advisors, consultants, or architects.
               </p>
               <Link href='/contact'><button className="btn btn-start btn-lg text-start">
-                Let's Meet
+                Let&apos;s Meet
               </button></Link>
             </div>
             <img src='./team.png' className="img-fluid boot-free" />
