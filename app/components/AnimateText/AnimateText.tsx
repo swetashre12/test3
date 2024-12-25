@@ -2,6 +2,7 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { Power3 } from "gsap";
+import "./AnimateText.css";
 
 interface AnimateTextProps {
   texts?: string[];
@@ -14,7 +15,7 @@ const AnimateText: React.FC<AnimateTextProps> = ({
   texts = ["Web app", "Security", "Infrastructure", "AI"],
   animationDuration = 0.3,
   delayBetweenAnimations = 3000,
-  className = "app-text"
+  className = "app-text",
 }) => {
   const textRef = useRef<HTMLSpanElement | null>(null);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
@@ -69,7 +70,7 @@ const AnimateText: React.FC<AnimateTextProps> = ({
   }, [texts, animationDuration, delayBetweenAnimations]);
 
   return (
-    <span ref={textRef} className={className}>
+    <span ref={textRef} className="text-gradient">
       {texts[0]}
     </span>
   );
