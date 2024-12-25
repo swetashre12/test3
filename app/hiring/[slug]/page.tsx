@@ -1,4 +1,4 @@
-import { Metadata } from 'next';
+import type { Metadata, ResolvingMetadata } from 'next';
 import parse from "html-react-parser";
 import Link from "next/link";
 import Header from '../../components/Header/Header';
@@ -12,8 +12,15 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 import { notFound } from "next/navigation";
 
 
-export async  function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
-  const { slug } = await Promise.resolve(params);
+type Props = {
+  params: Promise<{ slug: string }>;
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
+}
+
+export async  function generateMetadata( { params }: Props,
+  parent: ResolvingMetadata
+): Promise<Metadata> {
+  const slug = (await params).slug;
   const jobDetail = job.find((j) => j.slug === slug);
 
   if (!jobDetail) {
@@ -22,6 +29,7 @@ export async  function generateMetadata({ params }: { params: { slug: string } }
       description: 'The job you are looking for could not be found.',
     };
   }
+  const previousImages = (await parent).openGraph?.images || [];
 
   return {
     title: `${jobDetail.job_title} - Hiring at Neelgai`,
@@ -47,6 +55,7 @@ export async  function generateMetadata({ params }: { params: { slug: string } }
           url: 'https://www.neelgai.com/static/media/neelgai-resource.33b90f763a3d91cf9f35.png',
           alt: 'Neelgai resource',
         },
+        ...previousImages
       ],
       siteName: 'Neelgai',
       type: 'website',
@@ -70,8 +79,8 @@ export async  function generateMetadata({ params }: { params: { slug: string } }
     }));
   }
   
-  export default async function HiringDetail({ params }: { params: { slug: string } }) {
-    const { slug } = await Promise.resolve(params);
+  export default async function HiringDetail({ params }: Props) {
+    const slug = (await params).slug;
     const jobDetail = job.find((j) => j.slug === slug);
   
     if (!jobDetail) {

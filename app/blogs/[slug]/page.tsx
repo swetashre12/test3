@@ -1,18 +1,14 @@
-import { TypedObject } from "@portabletext/types";
+import type { Metadata, ResolvingMetadata } from 'next';
 import { PortableText } from "next-sanity";
-import { Metadata } from "next";
+import { TypedObject } from '@portabletext/types';
 import Header from "@/app/components/Header/Header";
 import Footer from "@/app/components/Footer/Footer";
 import { client } from "../../constant/client";
 import "./BlogDetails.css";
 
-interface Author {
-  name: string;
-  image?: {
-    asset: {
-      url: string;
-    };
-  };
+type Props = {
+  params: Promise<{ slug: string }>;
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 }
 
 interface BlogPost {
@@ -22,23 +18,23 @@ interface BlogPost {
   tags: string[];
   slug: { current: string };
   date: string;
-  blog_image?: {
-    asset: {
-      url: string;
-    };
-  };
-  postedBy?: Author[];
+  blog_image?: { asset: { url: string } };
+  postedBy?: Array<{
+    name: string;
+    image?: { asset: { url: string } };
+  }>;
 }
 
-interface PageProps {
-  params: Awaited<{ slug: string }>;
-}
-
-export async function generateMetadata({
-  params,
-}: PageProps): Promise<Metadata> {
-  const blog = await fetchBlog(params.slug);
+export async function generateMetadata(
+  { params }: Props,
+  parent: ResolvingMetadata
+): Promise<Metadata> {
+  const slug = (await params).slug;
+  const blog = await fetchBlog(slug);
+  
   if (!blog) return getNotFoundMetadata();
+
+  const previousImages = (await parent).openGraph?.images || [];
 
   return {
     title: blog.title,
@@ -56,6 +52,7 @@ export async function generateMetadata({
           url: "https://www.neelgai.com/static/media/default-blog-image.png",
           alt: blog.title,
         },
+        ...previousImages
       ],
       siteName: "Neelgai Blog",
       type: "article",
@@ -71,11 +68,7 @@ export async function generateMetadata({
 
 async function fetchBlog(slug: string): Promise<BlogPost | null> {
   try {
-    return await client.fetch<BlogPost>(
-      POST_QUERY,
-      { slug },
-      { next: { revalidate: 30 } }
-    );
+    return await client.fetch<BlogPost>(POST_QUERY, { slug }, { next: { revalidate: 30 } });
   } catch (error) {
     console.error("Error fetching blog:", error);
     return null;
@@ -97,8 +90,9 @@ function getNotFoundMetadata(): Metadata {
   };
 }
 
-export default async function PostPage({ params }: PageProps) {
-  const blog = await fetchBlog(params.slug);
+export default async function Page({ params }: Props) {
+  const slug = (await params).slug;
+  const blog = await fetchBlog(slug);
 
   if (!blog) {
     return <h1>Blog not found</h1>;
@@ -112,7 +106,7 @@ export default async function PostPage({ params }: PageProps) {
         <div className="blog-date text-start my-4">
           {new Date(blog.date).toLocaleDateString()}
         </div>
-
+        
         <div className="row">
           {blog.postedBy?.map((author, index) => (
             <div key={index} className="col-xs-10 col-md-4">
@@ -146,7 +140,6 @@ export default async function PostPage({ params }: PageProps) {
     </>
   );
 }
-
 const POST_QUERY = `*[_type == "blog" && slug.current == $slug][0] {
   _id,
   title,
