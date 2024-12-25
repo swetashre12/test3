@@ -70,7 +70,7 @@ const AnimateText: React.FC<AnimateTextProps> = ({
   }, [texts, animationDuration, delayBetweenAnimations]);
 
   return (
-    <span ref={textRef} className="text-gradient">
+    <span ref={textRef} className={className}>
       {texts[0]}
     </span>
   );
